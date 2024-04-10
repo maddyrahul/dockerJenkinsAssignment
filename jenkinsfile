@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'rahulmaddy123/rahul'
+        IMAGE_NAME = 'rahulmaddy123/rahulmaddy'
         IMAGE_TAG = 'v1.0'
     }
 
@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'dotnet build src/dockerJenkinsAssignment/dockerJenkinsAssignment.csproj --configuration Release'
+                sh 'dotnet build src/dockerJenkinsAssignment.csproj --configuration Release'
             }
         }
 
